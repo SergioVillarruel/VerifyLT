@@ -56,6 +56,7 @@ def find_tl(u,v):
   for result in results:
     aux = np.linalg.solve(sistema_eq,result)
     tl.append(np.ndarray.tolist(aux))
+  print("La transformacion lineal es la siguiente")
   show_tl(tl)
 
 def main():
