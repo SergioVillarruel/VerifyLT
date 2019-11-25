@@ -16,7 +16,7 @@ def set_u():
     for line in f1:
         array.append(get_line(line))
     n = len(array)
-    #Validación de datos
+    # Validación de datos
     for i in range(n):
         if n != len(array[i]):
             print("El vector de la linea",i+1,"no cumple con la dimension adecuada")
@@ -51,7 +51,7 @@ def set_v(n):
             if len(array[i]) != len(array[i+1])  :
                 print("El vector de la linea",i+2,"no cumple con la dimension adecuada respecto al de la linea",i+1)
                 return 0
- 
+
     #Creacion de la lista de vectores
     vectores = []
     for i in range(len(array)):
@@ -61,10 +61,10 @@ def set_v(n):
         vectores.append(vector)
     return vectores
 
+
 def set_val():
-    u=set_u()
+    u = set_u()
     if u!=0:
         v=set_v(len(u))
-        return u,v
-    return u
-    
+        return u, v
+    return u,0
