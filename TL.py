@@ -15,6 +15,7 @@ def show_tl(tl):
   print(expresion)
 
 def primeraValidacion(u,v):
+  v = np.copy(u)
   uv = np.array([0 for i in range(len(u))])
   result = u+v
   for i in range(len(u)):
